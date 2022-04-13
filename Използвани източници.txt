@@ -1,0 +1,19 @@
+[1] https://bloggeek.me/what-is-webrtc/
+[2] https://webrtc.org/
+[3] https://www.techtarget.com/searchunifiedcommunications/definition/WebRTC-Web-Real-Time-Communications
+[4] https://xbsoftware.medium.com/why-a-private-webrtc-video-chat-app-is-better-for-business-than-skype-f1a6b2cc6e84
+[5] https://docs.bigbluebutton.org/
+[6] https://docs.bigbluebutton.org/2.2/architecture.html
+[7] https://fireship.io/lessons/webrtc-firebase-video-chat/
+[8] https://github.com/fireship-io/webrtc-firebase-demo
+
+Картинки:
+[i1] https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/WebRTC_Logo.svg/2560px-WebRTC_Logo.svg.png
+[i2] https://bloggeek.me/wp-content/uploads/2019/12/webrtc-browser-support.png
+[i3] https://docs.bigbluebutton.org/images/22-overview-2.png
+[i4] https://docs.bigbluebutton.org/images/10/bbb-arch-overview.png
+[i5] https://docs.bigbluebutton.org/images/10/joining-voice-conf.png
+
+
+Other: 
+https://www.dev-insider.de/was-ist-webrtc-a-1012379/
