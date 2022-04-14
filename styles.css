@@ -60,6 +60,14 @@ footer {
     color: #a9a8a8;
 }
 
+.author {
+  color: #4f76a4;
+}
+
+.paperName {
+  color: #3c6424;
+}
+
 #video {
     border: 1px solid black;
     box-shadow: 2px 2px 3px black;
