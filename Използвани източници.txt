@@ -4,8 +4,9 @@
 [4] https://xbsoftware.medium.com/why-a-private-webrtc-video-chat-app-is-better-for-business-than-skype-f1a6b2cc6e84
 [5] https://docs.bigbluebutton.org/
 [6] https://docs.bigbluebutton.org/2.2/architecture.html
-[7] https://fireship.io/lessons/webrtc-firebase-video-chat/
-[8] https://github.com/fireship-io/webrtc-firebase-demo
+https://fireship.io/lessons/webrtc-firebase-video-chat/
+https://github.com/fireship-io/webrtc-firebase-demo
+[7] https://developer.mozilla.org/en-US/docs/Web/API/WebRTC_API/Taking_still_photos
 
 Картинки:
 [i1] https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/WebRTC_Logo.svg/2560px-WebRTC_Logo.svg.png
