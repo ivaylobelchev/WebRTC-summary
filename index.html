@@ -24,8 +24,9 @@
                 <a href="#part6"><li>WebRTC сигурен ли е?</li></a>
                 <a href="#part7"><li>Алтернативи на WebRTC</li></a>
                 <a href="#part8"><li>Пример за платформа, използваща WebRTC – BigBlueButton</li></a>
-                <a href="#part9"><li>Демонстрация на имплементация на WebRTC в браузъра</li></a>
-                <a href="#part10"><li>Списък с цитирана литература</li></a>
+                <a href="#part9"><li>WebRTC в PHP</li></a>
+                <a href="#part10"><li>Демонстрация на имплементация на WebRTC в браузъра</li></a>
+                <a href="#part11"><li>Списък с цитирана литература</li></a>
             </ol>
         </section>
 
@@ -33,7 +34,7 @@
             <h2 id="part1">1. Въведение</h2>
 
             <h3>Какво е WebRTC?</h3>
-            <p>WebRTC е HTML5 спецификация, която може да се използва за добавяне на медийни комуникации в реално време директно между браузър и устройства. Абревиатурата в името означава "Real Time Communication". <a href="#source_1">[1]</a> [8]</p>
+            <p>WebRTC е HTML5 спецификация, която може да се използва за добавяне на медийни комуникации в реално време директно между браузър и устройства. Абревиатурата в името означава "Real Time Communication". <a href="#source_1">[1]</a> <a href="#source_8">[8]</a></p>
             <p>Просто казано:</p>
             <p>WebRTC дава възможност за гласова и видео комуникация да работят в уеб страници без да е необходимо никакво предварително инсталиране на плъгини в браузъра. <a href="#source_1">[1]</a></p>
             <p>Инструментът е представен през 2011 г. и оттогава популярността му постоянно нараства. Той поддържа видео, глас и данни за изпращане между пиъри, което позволява на разработчиците да изграждат гъвкави решения за гласова и видео комуникация. Технологията е достъпна за всички съвременни браузъри, както и за собствени клиенти за всички основни платформи. <a href="#source_2">[2]</a></p>
@@ -48,7 +49,7 @@
             <p>WebRTC променя всичко това: премахва необходимостта от C/C++ и го заменя с Javascript API.</p>
             <p>Той идва с Javascript API слой отгоре, който можете да използвате в браузъра. Това прави много по-лесно разработването и интегрирането на комуникации в реално време навсякъде. Вътрешно WebRTC все още се прилага предимно с помощта на C/C++, но повечето разработчици, които използват WebRTC, няма да трябва да копаят дълбоко в тези слоеве, за да разработят своите приложения. <a href="#source_1">[1]</a></p>
 
-            <a src="https://bloggeek.me/wp-content/uploads/2019/12/webrtc-browser-support.png"><img src="images/webrtc-browser-support.png" align="right" class="supportIMG" alt="WebRTC browser support" target="_blank"></a>
+            <img src="images/webrtc-browser-support.png" align="right" class="supportIMG" alt="WebRTC browser support" target="_blank">
             <h3>Наличност и поддръжка на различни платформи</h3>
             <p>WebRTC днес е наличен във всички съвременни браузъри. Поддържат го Google Chrome, Mozilla Firefox, Apple Safari и Microsoft Edge.</p>
             <p>Можете също да го „вземете“ и да го интегрирате в приложение или вградено устройство, без изобщо да имате нужда от браузър. <a href="#source_1">[1]</a> <a href="#source_9">[9]</a></p>
@@ -92,7 +93,7 @@
             <ul>
                 <li>елиминира голяма част от вътрешната ръчна интеграция, изисквана от ИТ;</li>
                 <li>може да регулира качеството на комуникацията, честотната лента и потока на трафика, когато условията на мрежата се променят;</li>
-                <li>се поддържа от повечето основни уеб браузъри, включително Google Chrome за настолни компютри и Android, Mozilla Firefox за настолни компютри и Android и Safari;</li>
+                <li>поддържа се от повечето основни уеб браузъри, включително: Google Chrome за настолни компютри и устройства с Android OS, Mozilla Firefox за настолни компютри и устройства с Android, а за iOS и iPadOS само през Safari;</li>
                 <li>работи на всяка операционна система, стига браузърът да поддържа WebRTC;</li>
                 <li>не изисква компоненти или плъгини на трети страни; и</li>
                 <li>е безплатен като софтуер с отворен код. <a href="#source_3">[3]</a></li>
@@ -128,7 +129,7 @@
             <h2 id="part7">7. Алтернативи на WebRTC</h2>
             <img src="images/Skype_logopng.png" align="right" class="smallIMG2">
             <p>Една от най-известните платформи от началото на века е <b>Skype</b>. </p>
-            <p>Skype е приложение, предназначено за провеждане на аудио и видео разговори, както и за обмен на текстови съобщения или файлове през Интернет. Първата версия на това приложение е пусната през 2003 г. и първоначално е адаптирана само за гласова комуникация. Като една от първите платформи, които прилагат технологията VoIP (Voice over Internet Protocol), тя придобива невероятна популярност. Според съобщението на Microsoft, направено на конференцията Build 2016, Skype все още има над 300 милиона активни потребители месечно. Като се има предвид, че Skype може да се използва на настолен компютър, мобилен телефон или през уеб браузър, няма нищо изненадващо, че това е очевидният избор в случай, че искате да се обадите на Вашия клиент или колега от другия край на земята.</p>
+            <p>Skype е приложение, предназначено за провеждане на аудио и видео разговори, както и за обмен на текстови съобщения или файлове през Интернет. Първата версия на това приложение е пусната през 2003 г. и първоначално е адаптирана само за гласова комуникация. Като една от първите платформи, които прилагат технологията VoIP (Voice over Internet Protocol), тя придобива невероятна популярност. Според съобщението на Microsoft, направено на конференцията Build 2016, Skype все още има над 300 милиона активни потребители месечно. Като се има предвид, че Skype може да се използва на настолен компютър, мобилен телефон или през уеб браузър, няма нищо изненадващо, че това е очевидният избор в случай, че искате да се обадите на Вашия клиент или колега от другия край на земята. <a href="#source_4">[4]</a> <a href="#source_13">[13]</a></p>
             <p>WebRTC, от друга страна, не е готово за използване приложение, а технология. Тя позволява осъществяване на комуникация в реално време чрез уеб браузър. Потребителят няма нужда да инсталира допълнителен софтуер или приставка за браузър на трета страна, за да получи възможност за обмен на текстови съобщения, файлове или за да  извършва на аудио/видео разговори. Всеки разработчик ще бъде доволен от факта, че WebRTC API позволява внедряване на необходимата функционалност с минимално количество код. Тези характеристики са причината за нарастването на популярността на WebRTC. Тази технология е пусната от Google през май 2011 г. и пет години по-късно, през юни 2016 г., Google предоставя следните статистически данни: </p>
             <ul>
                 <li>Два милиарда браузъра Chrome с поддръжка на WebRTC</li>
@@ -136,8 +137,8 @@
                 <li>1200 WebRTC-базирани компании и проекта</li>
                 <li>Пет милиарда изтегляния на мобилни приложения, които включват WebRTC</li>
             </ul>
-            <p>Според мнението на анализаторите глобалният пазар на WebRTC ще продължава да расте. Един от основните двигатели на пазара за комуникация в реално време в мрежата е голямото търсене на услуги за аудио/видео чат, достъпни без изтегляне на допълнителни плъгини. Нарастващият брой устройства, поддържащи WebRTC, доведе до тенденцията Bring Your Own Device (BYOD, донеси своето устройство). Това е нова тенденция на работните места, която насърчава служителите да използват собствените си мобилни устройства за нуждите на бизнес комуникацията.</p>
-            <p>Както можете да видите, тук говорим за подобни концепции. Тези две платформи предоставят почти еднакви услуги. Начините за предоставяне на тези услуги обаче се различават. Skype е приложение за уеб комуникация, докато WebRTC е инструмент, който позволява внедряване на функционалността, необходима за уеб комуникация. Може да изглежда, че предпочитането на WebRTC пред Skype не е много мъдър избор, тъй като предполага полагане на допълнителни усилия. Вместо да използвате Skype, с който сте запознати, ще трябва да отделите известно време за проучване и да изберете решението, което отговаря по-добре на Вашите нужди сред наличните опции. Като алтернатива можете да създадете свое собствено WebRTC приложение, като използвате ресурсите на Вашата компания или да наемете компания за разработка на софтуер. <a href="#source_4">[4]</a> <a href="#source_13">[13]</a></p>
+            <p>Според мнението на анализаторите глобалният пазар на WebRTC ще продължава да расте. Един от основните двигатели на пазара за комуникация в реално време в мрежата е голямото търсене на услуги за аудио/видео чат, достъпни без изтегляне на допълнителни плъгини. Нарастващият брой устройства, поддържащи WebRTC, доведе до тенденцията Bring Your Own Device (BYOD, донеси своето устройство). Това е нова тенденция на работните места, която насърчава служителите да използват собствените си мобилни устройства за нуждите на бизнес комуникацията. <a href="#source_4">[4]</a></p>
+            <p>Както можете да видите, тук говорим за подобни концепции. Тези две платформи предоставят почти еднакви услуги. Начините за предоставяне на тези услуги обаче се различават. Skype е приложение за уеб комуникация, докато WebRTC е инструмент, който позволява внедряване на функционалността, необходима за уеб комуникация. Може да изглежда, че предпочитането на WebRTC пред Skype не е много мъдър избор, тъй като предполага полагане на допълнителни усилия. Вместо да използвате Skype, с който сте запознати, ще трябва да отделите известно време за проучване и да изберете решението, което отговаря по-добре на Вашите нужди сред наличните опции. Като алтернатива можете да създадете свое собствено WebRTC приложение, като използвате ресурсите на Вашата компания или да наемете компания за разработка на софтуер. <a href="#source_4">[4]</a></p>
         </section>
 
         <section class="container">
@@ -149,10 +150,16 @@
                 <li>Онлайн обучение – BigBlueButton разширява тези основни функции за онлайн обучение. Например, преподавателят може да отключи възможността за използване на многопотребителска бяла дъска и да работи директно с ученик при решаване на математически проблем. <a href="#source_5">[5]</a></li>
             </ul>
             <h3>Преглед на BigBlueButton</h3>
-            <p>BigBlueButton е уеб приложение, базирано на HTML5. За разлика от много търговски системи за уеб конференции, които изискват да инсталирате софтуер, BigBlueButton работи изцяло в уеб браузър. За да се присъедини потребител към сесия на BigBlueButton, е нужно единствено да щракне върху връзка, която отваря валиден URL адрес за присъединяване във Вашия браузър. Сървърът BigBlueButton получава URL адреса, потвърждава го и зарежда клиента BigBlueButton. След зареждане той незабавно Ви подканва да се присъедините към аудио конференцията и да започнете да си сътрудничите. Няма плъгини за изтегляне, няма софтуер за инсталиране. BigBlueButton предоставя висококачествено аудио, видео и споделяне на екрана, като използва вградената поддръжка на браузъра за уеб библиотеки за комуникация в реално време (WebRTC). <a href="#source_5">[5]</a> <a href="#source_10">[10]</a></p>
-            <p><a src="https://docs.bigbluebutton.org/images/22-overview-2.png" target="_blank"><img src="images/BBB-overview-2.png" alt="BigBlueButton interface"></a></p>
+            <p>BigBlueButton е уеб приложение, базирано на HTML5. За разлика от много търговски системи за уеб конференции, които изискват да инсталирате софтуер, BigBlueButton работи изцяло в уеб браузър. За да се присъедини потребител към сесия на BigBlueButton, е нужно единствено да щракне върху връзка, която отваря валиден URL адрес за присъединяване във Вашия браузър. Сървърът BigBlueButton получава URL адреса, потвърждава го и зарежда клиента BigBlueButton. След зареждане той незабавно Ви подканва да се присъедините към аудио конференцията и да започнете да си сътрудничите. Няма плъгини за изтегляне, няма софтуер за инсталиране. BigBlueButton предоставя висококачествено аудио, видео и споделяне на екрана, като използва вградената поддръжка на браузъра за уеб библиотеки за комуникация в реално време (WebRTC). <a href="#source_5">[5]</a></p>
+            <figure>
+                <img src="images/BBB-overview-2.png" alt="BigBlueButton interface">
+                <figcaption>Фигура 3: Интерфейс на BigBlueButton <a href="#source_10">[10]</a></figcaption>
+            </figure>
             <h3>Архитектура на BigBlueButton</h3>
-            <p><a src="https://docs.bigbluebutton.org/images/10/bbb-arch-overview.png" target="_blank"><img src="images/bbb-overview.png" alt="BigBlueButton structure"></a></p>
+            <figure>
+                <img src="images/bbb-overview.png" alt="BigBlueButton structure">
+                <figcaption>Фигура 4: Преглед на архитектурата на BigBlueButton <a href="#source_11">[11]</a></figcaption>
+            </figure>
             <p>Обясненията по-долу са само за частите, засягащи WebRTC.</p>
             <h3>HTML5 клиент</h3>
             <p>HTML5 клиентът е едностранично отзивчиво уеб приложение, което е изградено върху следните компоненти:</p>
@@ -160,7 +167,7 @@
                 <li>React.js за изобразяване на потребителския интерфейс по ефективен начин</li>
                 <li>WebRTC за изпращане/получаване на аудио и видео</li>
             </ul>
-            <p>HTML5 клиентът се свързва директно със сървъра BigBlueButton през порт 443 (SSL) от зареждане на клиента BigBlueButton до създаване на връзка с уеб сокет. <a href="#source_6">[6]</a> <a href="#source_11">[11]</a></p>
+            <p>HTML5 клиентът се свързва директно със сървъра BigBlueButton през порт 443 (SSL) от зареждане на клиента BigBlueButton до създаване на връзка с уеб сокет. <a href="#source_6">[6]</a></p>
             <a href="https://docs.bigbluebutton.org/images/10/joining-voice-conf.png"><img src="images/joining-voice-conf.png" align="left" class="smallIMG" alt="joining voice conference"></a>
             <h3>FreeSWITCH</h3>
             <p>FreeSWITCH предоставя възможността за гласова конферентна връзка в BigBlueButton. Потребителите могат да се присъединят към гласовата конференция чрез слушалките. Потребителите, които се присъединяват чрез Google Chrome или Mozilla Firefox, могат да се възползват от по-високо качество на звука, като се свържат чрез WebRTC. FreeSWITCH може също да бъде интегриран с VoIP доставчици, така че потребителите, които не могат да се присъединят с помощта на слушалките, ще могат да се обаждат чрез телефона си. <a href="#source_6">[6]</a></p>
@@ -169,7 +176,15 @@
         </section>
 
         <section class="container ninth">
-            <h2 id="part9">9. Демонстрация на имплементация на WebRTC в браузъра</h2>
+            <h2 id="part9">9. WebRTC в PHP</h2>
+            <h3>Можете ли да използвате WebRTC с PHP?</h3>
+            <p>WebRTC свързва двама пиъри заедно. Пиърите са предимно браузъри, но могат да бъдат всяка комбинация пиър и клиент, поддържащи WebRTC.</p>
+            <p>WebRTC изисква от двамата пиъри да обменят някаква информация, за да установят връзката - наречена сигнализиране. Тази информация може да се обменя например чрез PHP сървър. Обикновено би се използвало websockets за обмен, но и PHP може да действа като сървър на websockets. <a href="#source_14">[14]</a></p>
+            <p>PHP <b>не</b> е най-ефективният сигнализиращ сървър за доставка на информация за връзка до много партньори, тъй като не е добър избор за подсигуряване на мащабируемост на събития в реално време. <a href="#source_14">[14]</a></p>
+        </section>
+
+        <section class="container">
+            <h2 id="part10">10. Демонстрация на имплементация на WebRTC в браузъра</h2>
             <p>Тук ще покажа примерна демонстрация на това как можем да използваме WebRTC в браузъра, като ще направим сайт, който ни прави снимки и да ни ги показва. <a href="#source_7">[7]</a></p>
 
             <h3>HTML интерфейс</h3>
@@ -177,12 +192,15 @@
 
             <p>Първият панел вляво съдържа два компонента: елемент &lt;video&gt;, който ще получава потока от WebRTC, и &lt;button&gt;, който потребителят щраква, за да заснеме видео кадър.</p>
 
-            <div>
-                &lt;div class="camera"&gt;<br>
-                &emsp;&lt;video id="video"&gt;Видео стриймът не е наличен.&lt;/video&gt;<br>
-                &emsp;&lt;button id="startbutton"&gt;Направи снимка&lt;/button&gt;<br>
-                &lt;/div&gt;
-            </div>
+            <figure>
+                <div>
+                    &lt;div class="camera"&gt;<br>
+                    &emsp;&lt;video id="video"&gt;Видео стриймът не е наличен.&lt;/video&gt;<br>
+                    &emsp;&lt;button id="startbutton"&gt;Направи снимка&lt;/button&gt;<br>
+                    &lt;/div&gt;
+                </div>
+                <figcaption>Фигура 6: Код за бутона и алтернативния текст <a href="#source_7">[7]</a></figcaption>
+            </figure>
 
             <p>Това е лесно и ще видим как ще се свърже, когато влезем в кода на JavaScript.</p>
 
@@ -190,13 +208,16 @@
 
             <p>Имаме и елемент &lt;img&gt;, в който ще нарисуваме изображението — това е крайният дисплей, който се показва на потребителя.</p>
 
-            <div>
-                &lt;canvas id="canvas"&gt;<br>
-                &emsp;&lt;div class="output"&gt;<br>
-                &emsp;&emsp;&lt;img id="photo" alt="Видеопотокът ще се покаже в този прозорец."&gt;<br>
-                &emsp;&lt;/div&gt;<br>
-                &lt;/canvas&gt;
-            </div>
+            <figure>
+                <div>
+                    &lt;canvas id="canvas"&gt;<br>
+                    &emsp;&lt;div class="output"&gt;<br>
+                    &emsp;&emsp;&lt;img id="photo" alt="Видеопотокът ще се покаже в този прозорец."&gt;<br>
+                    &emsp;&lt;/div&gt;<br>
+                    &lt;/canvas&gt;
+                </div>
+                <figcaption>Фигура 7: Код за прозореца с видеопоток <a href="#source_7">[7]</a></figcaption>
+            </figure>
 
             <p>Това е целият релевантен HTML. Останалото е само част от оформлението на страницата и малко текст, предлагащ връзка към тази страница. <a href="#source_7">[7]</a></p>
 
@@ -206,18 +227,21 @@
             <p><b>Инициализация</b></p>
             <p>Започваме, като обвиваме целия скрипт в анонимна функция, за да избегнем глобални променливи, след което настройваме различните променливи, които ще използваме. <a href="#source_7">[7]</a></p>
 
-            <div>
-                (function() {<br>
-                    &emsp;var width = 320;    // Правим снимката да е толкова широка<br>
-                    &emsp;var height = 0;     // Височината ще се сметне на база на ширината<br>           
+            <figure>
+                <div>
+                    (function() {<br>
+                        &emsp;var width = 320;    // Правим снимката да е толкова широка<br>
+                        &emsp;var height = 0;     // Височината ще се сметне на база на ширината<br>           
 
-                    &emsp;var streaming = false;<br>
-                  
-                    &emsp;var video = null;<br>
-                    &emsp;var canvas = null;<br>
-                    &emsp;var photo = null;<br>
-                    &emsp;var startbutton = null;<br>
-            </div>
+                        &emsp;var streaming = false;<br>
+                    
+                        &emsp;var video = null;<br>
+                        &emsp;var canvas = null;<br>
+                        &emsp;var photo = null;<br>
+                        &emsp;var startbutton = null;<br>
+                </div>
+                <figcaption>Фигура 8: Функция за инициализация <a href="#source_7">[7]</a></figcaption>
+            </figure>
 
             <p><b>Функцията startup()</b></p>
             <p>Функцията startup() се изпълнява, когато страницата приключи зареждането, със съдействието на EventTarget.addEventListener. Работата на тази функция е да поиска достъп до уеб камерата на потребителя, да инициализира изхода &lt;img&gt; в състояние по подразбиране и да установи слушателите на събития, необходими за получаване на всеки кадър на видео от камерата и реагиране при щракване върху бутона за заснемане на изображение. <a href="#source_7">[7]</a></p>
@@ -225,27 +249,33 @@
             <p><b>Получаване на препратки към елементи</b></p>
             <p>Първо, грабваме препратки към основните елементи, до които трябва да имаме достъп.</p>
 
-            <div>
-                function startup() {<br>
-                    &emsp;video = document.getElementById('video');<br>
-                    &emsp;canvas = document.getElementById('canvas');<br>
-                    &emsp;photo = document.getElementById('photo');<br>
-                    &emsp;startbutton = document.getElementById('startbutton');
-            </div>
+            <figure>
+                <div>
+                    function startup() {<br>
+                        &emsp;video = document.getElementById('video');<br>
+                        &emsp;canvas = document.getElementById('canvas');<br>
+                        &emsp;photo = document.getElementById('photo');<br>
+                        &emsp;startbutton = document.getElementById('startbutton');
+                </div>
+                <figcaption>Фигура 9: Функция за получаване на препратки към елементи <a href="#source_7">[7]</a></figcaption>
+            </figure>
 
-            <p><b>Вземане на медийния поток</b></p>
+            <p><b>Взимане на медийния поток</b></p>
             <p>Следващата задача е да получим медиен поток:</p>
 
-            <div>
-                &emsp;navigator.mediaDevices.getUserMedia({ video: true, audio: false })<br>
-                &emsp;.then(function(stream) {<br>
-                    &emsp;&emsp;video.srcObject = stream;<br>
-                    &emsp;&emsp;video.play();<br>
-                    &emsp;})<br>
-                    &emsp;.catch(function(err) {<br>
-                        &emsp;&emsp;console.log("An error occurred: " + err);<br>
-                        &emsp;});
-            </div>
+            <figure>
+                <div>
+                    &emsp;navigator.mediaDevices.getUserMedia({ video: true, audio: false })<br>
+                    &emsp;.then(function(stream) {<br>
+                        &emsp;&emsp;video.srcObject = stream;<br>
+                        &emsp;&emsp;video.play();<br>
+                        &emsp;})<br>
+                        &emsp;.catch(function(err) {<br>
+                            &emsp;&emsp;console.log("An error occurred: " + err);<br>
+                            &emsp;});
+                </div>
+                <figcaption>Фигура 10: Функция за взимане на медийния поток <a href="#source_7">[7]</a></figcaption>
+            </figure>
 
             <p>Тук извикваме MediaDevices.getUserMedia() и изискваме видео поток (без аудио). Връща обещание, към което прикачваме обратни извиквания за успех и неуспех.</p>
 
@@ -258,19 +288,22 @@
             <p><b>Слушане за наличието на видеопотока</b></p>
             <p>След извикване на HTMLMediaElement.play() на &lt;video&gt;, има (надявам се кратък) период от време, който изтича, преди видеопотокът от видео да започне да тече. За да избегнем блокиране, докато това не се случи, добавяме слушател на събитие към видеото за събитието canplay, което спира, когато възпроизвеждането на видеото действително започне. В този момент всички свойства на видеообекта са конфигурирани въз основа на формата на потока.</p>
             
-            <div>
-                &emsp;video.addEventListener('canplay', function(ev){<br>
-                    &emsp;&emsp;if (!streaming) {<br>
-                        &emsp;&emsp;&emsp;height = video.videoHeight / (video.videoWidth/width);<br>
-              
-                        &emsp;&emsp;&emsp;video.setAttribute('width', width);<br>
-                        &emsp;&emsp;&emsp;video.setAttribute('height', height);<br>
-                        &emsp;&emsp;&emsp;canvas.setAttribute('width', width);<br>
-                        &emsp;&emsp;&emsp;canvas.setAttribute('height', height);<br>
-                        &emsp;&emsp;&emsp;streaming = true;<br>
-                        &emsp;&emsp;}<br>
-                        &emsp;}, false);
-            </div>
+            <figure>
+                <div>
+                    &emsp;video.addEventListener('canplay', function(ev){<br>
+                        &emsp;&emsp;if (!streaming) {<br>
+                            &emsp;&emsp;&emsp;height = video.videoHeight / (video.videoWidth/width);<br>
+                
+                            &emsp;&emsp;&emsp;video.setAttribute('width', width);<br>
+                            &emsp;&emsp;&emsp;video.setAttribute('height', height);<br>
+                            &emsp;&emsp;&emsp;canvas.setAttribute('width', width);<br>
+                            &emsp;&emsp;&emsp;canvas.setAttribute('height', height);<br>
+                            &emsp;&emsp;&emsp;streaming = true;<br>
+                            &emsp;&emsp;}<br>
+                            &emsp;}, false);
+                </div>
+                <figcaption>Фигура 11: Функция за слушане за наличието на видеопотока <a href="#source_7">[7]</a></figcaption>
+            </figure>
 
             <p>Това обратно извикване не прави нищо, освен ако не е извикано за първи път; това се тества чрез разглеждане на стойността на нашата променлива за стрийминг, която е фалшива при първото изпълнение на този метод.</p>
 
@@ -281,38 +314,47 @@
             <p><b>Обработване щракванията върху бутона</b></p>
             <p>За да заснемем неподвижна снимка всеки път, когато потребителят щракне върху бутона за стартиране, трябва да добавим слушател на събитие към бутона, който да бъде извикан, когато бъде издадено събитието за щракване:</p>
 
-            <div>
-                &emsp;startbutton.addEventListener('click', function(ev){<br>
-                    &emsp;&emsp;takepicture();<br>
-                    &emsp;&emsp;ev.preventDefault();<br>
-                    &emsp;}, false);
-            </div>
+            <figure>
+                <div>
+                    &emsp;startbutton.addEventListener('click', function(ev){<br>
+                        &emsp;&emsp;takepicture();<br>
+                        &emsp;&emsp;ev.preventDefault();<br>
+                        &emsp;}, false);
+                </div>
+                <figcaption>Фигура 12: Функция за обработване на щракванията върху бутона <a href="#source_7">[7]</a></figcaption>
+            </figure>
 
             <p>Този метод е достатъчно прост: той просто извиква нашата функция takepicture(), дефинирана по-долу в раздела Заснемане на кадър от потока, след което извиква Event.preventDefault() на полученото събитие, за да предотврати кликването да бъде обработвано повече от веднъж. <a href="#source_7">[7]</a></p>
 
             <p><b>Завършване на метода startup()</b></p>
             <p>Има само още два реда код в метода startup():</p>
 
-            <div>
-                &emsp;&emsp;clearphoto();<br>
-                &emsp;}
-            </div>
+            <figure>
+                <div>
+                    &emsp;&emsp;clearphoto();<br>
+                    &emsp;}
+                </div>
+                <figcaption>Фигура 13: Функция за инициализиране на метода clearphoto() <a href="#source_7">[7]</a></figcaption>
+            </figure>
 
-            <p>Това е мястото, където наричаме метода clearphoto(), който ще опишем по-долу в раздела Изчистване на полето за снимки. <a href="#source_7">[7]</a></p>
+            <p>Това е мястото, където инициализираме метода clearphoto(), който ще опишем по-долу в раздела Изчистване на полето за снимки. <a href="#source_7">[7]</a></p>
 
             <p><b>Изчистване на кутията за снимки</b></p>
             <p>Изчистването на полето за снимки включва създаване на изображение, след което го преобразуваме във формат, използваем от елемента &lt;img&gt;, който показва най-скоро заснетата рамка. Този код изглежда така:</>
 
-            <div>
-                &emsp;function clearphoto() {<br>
-                    &emsp;&emsp;var context = canvas.getContext('2d');<br>
-                    &emsp;&emsp;context.fillStyle = "#AAA";<br>
-                    &emsp;&emsp;context.fillRect(0, 0, canvas.width, canvas.height);<br>
-                
-                    &emsp;&emsp;var data = canvas.toDataURL('image/png');<br>
-                    &emsp;&emsp;photo.setAttribute('src', data);<br>
-                    &emsp;}
-            </div>
+            <figure>
+                <div>
+                    &emsp;function clearphoto() {<br>
+                        &emsp;&emsp;var context = canvas.getContext('2d');<br>
+                        &emsp;&emsp;context.fillStyle = "#AAA";<br>
+                        &emsp;&emsp;context.fillRect(0, 0, canvas.width, canvas.height);<br>
+                    
+                        &emsp;&emsp;var data = canvas.toDataURL('image/png');<br>
+                        &emsp;&emsp;photo.setAttribute('src', data);<br>
+                        &emsp;}
+                </div>
+                <figcaption>Фигура 14: Функция за изчистване на кутията за снимки <a href="#source_7">[7]</a></figcaption>
+            </figure>
 
             <p>Започваме, като получаваме препратка към скрития елемент &lt;canvas&gt;, който използваме за изобразяване извън екрана. След това задаваме fillStyle на #AAA (доста светло сиво) и запълваме цялото платно с този цвят, като извикаме fillRect().</p>
 
@@ -321,21 +363,24 @@
             <p><b>Заснемане на кадър от потока</b></p>
             <p>Има една последна функция за дефиниране и тя е целта на цялото упражнение: функцията takepicture(), чиято задача е да улови текущо показания видео кадър, да го преобразува в PNG файл и да го изведе в полето за заснета рамка. Кодът изглежда така:</p>
 
-            <div>
-                &emsp;function takepicture() {<br>
-                    &emsp;&emsp;var context = canvas.getContext('2d');<br>
-                    &emsp;&emsp;if (width && height) {<br>
-                        &emsp;&emsp;&emsp;canvas.width = width;<br>
-                        &emsp;&emsp;&emsp;canvas.height = height;<br>
-                        &emsp;&emsp;&emsp;context.drawImage(video, 0, 0, width, height);<br>
-                
-                        &emsp;&emsp;&emsp;var data = canvas.toDataURL('image/png');<br>
-                        &emsp;&emsp;&emsp;photo.setAttribute('src', data);<br>
-                        &emsp;&emsp;} else {<br>
-                            &emsp;&emsp;&emsp;clearphoto();<br>
-                            &emsp;&emsp;}<br>
-                            &emsp;}
-            </div>
+            <figure>
+                <div>
+                    &emsp;function takepicture() {<br>
+                        &emsp;&emsp;var context = canvas.getContext('2d');<br>
+                        &emsp;&emsp;if (width && height) {<br>
+                            &emsp;&emsp;&emsp;canvas.width = width;<br>
+                            &emsp;&emsp;&emsp;canvas.height = height;<br>
+                            &emsp;&emsp;&emsp;context.drawImage(video, 0, 0, width, height);<br>
+                    
+                            &emsp;&emsp;&emsp;var data = canvas.toDataURL('image/png');<br>
+                            &emsp;&emsp;&emsp;photo.setAttribute('src', data);<br>
+                            &emsp;&emsp;} else {<br>
+                                &emsp;&emsp;&emsp;clearphoto();<br>
+                                &emsp;&emsp;}<br>
+                                &emsp;}
+                </div>
+                <figcaption>Фигура 15: Функция за заснемане на кадър от потока <a href="#source_7">[7]</a></figcaption>
+            </figure>
 
             <p>Както всеки път, когато трябва да работим със съдържанието на платно, започваме с получаване на контекста на 2D drawing context платно.</p>
 
@@ -349,23 +394,27 @@
             <p><b>Ако не работи правилно, моля обновете страницата и дайте достъп до камерата Ви.</b> Всичко се обработва локално.</p>
 
             <form>
-                <div class="contentarea">
-                    <h1>
-                        WebRTC: Демо, заснемащо статична снимка
-                    </h1>
-                    <p>
-                        Този пример демонстрира как се настройва медиен стрийм, който да използва Вашата вградена уеб камера, да взема снимка от стрийма и да я записва като PNG.
-                    </p>
-                    <div class="camera">
-                        <video id="video">Видео стриймът не е наличен</video>
-                        <button id="startbutton">Направи снимка, получи изненада!</button>
+                <figure>
+                    <div class="contentarea">
+                        <h1>
+                            WebRTC: Демо, заснемащо статична снимка
+                        </h1>
+                        <p>
+                            Този пример демонстрира как се настройва медиен стрийм, който да използва Вашата вградена уеб камера, да взема снимка от стрийма и да я записва като PNG.
+                        </p>
+                        <div class="camera">
+                            <video id="video">Видео стриймът не е наличен</video>
+                            <button id="startbutton">Направи снимка, получи изненада!</button>
+                        </div>
+                        <canvas id="canvas">
+                        </canvas>
+                        <div class="output">
+                            <img id="photo" alt="Вашият образ ще се покаже в този прозорец, ако всичко функционира правилно. WebRTC изисква https, така че ако виждате тази страница без https, това демо няма как да работи.">
+                        </div>
                     </div>
-                    <canvas id="canvas">
-                    </canvas>
-                    <div class="output">
-                        <img id="photo" alt="Вашият образ ще се покаже в този прозорец, ако всичко функционира правилно. Имате проблем с визуализацията на сайта. Няма изненада за Вас. It's not me, it's you.">
-                    </div>
-                </div>
+                    <figcaption>Фигура 16: Демо, заснемащо статична снимка <a href="#source_7">[7]</a></figcaption>
+                    <figcaption>Работещо демо на: <a href="https://ivaylobelchev.github.io/WebRTC-summary/">https://ivaylobelchev.github.io/WebRTC-summary/</a></figcaption>
+                </figure>
             
                 <script>
                     (function () {
@@ -465,7 +514,7 @@
         </section>
 
         <section class="container">
-            <h2 id="part10">10. Списък с цитирана литература</h2>
+            <h2 id="part11">11. Списък с цитирана литература</h2>
                 <p id="source_1">[1] <span class="author">BlogGeek.Me</span>, <span class="paperName">What is WebRTC and What is it Good For?</span>, публикуван на 1 август 2021 г.<br><a href="https://bloggeek.me/what-is-webrtc/" target="_blank">https://bloggeek.me/what-is-webrtc/</a>, последно посетен на 12 април 2022 г.</p>
                 <p id="source_2">[2] <span class="author">Google Developers</span>, <span class="paperName">WebRTC.org website</span><br><a href="https://webrtc.org/" target="_blank">https://webrtc.org/</a>, последно посетен на 12 април 2022 г.</p>
                 <p id="source_3">[3] <span class="author">Mary E. Shacklett</span>, <span class="paperName">WebRTC (Web Real-Time Communications)</span><br><a href="https://www.techtarget.com/searchunifiedcommunications/definition/WebRTC-Web-Real-Time-Communications" target="_blank">https://www.techtarget.com/searchunifiedcommunications/definition/WebRTC-Web-Real-Time-Communications</a>, последно посетен на 13 април 2022 г.</p>
@@ -478,11 +527,12 @@
                 <p id="source_10">[10] <span class="author">BigBlueButton</span>, <span class="paperName">BigBlueButton architecture image overview</span><br><a href="https://docs.bigbluebutton.org/images/22-overview-2.png" target="_blank">https://docs.bigbluebutton.org/images/22-overview-2.png</a>, последно посетен на 14 април 2022 г.</p>
                 <p id="source_11">[11] <span class="author">BigBlueButton</span>, <span class="paperName">BigBlueButton architecture image overview</span><br><a href="https://docs.bigbluebutton.org/images/10/bbb-arch-overview.png" target="_blank">https://docs.bigbluebutton.org/images/10/bbb-arch-overview.png</a>, последно посетен на 14 април 2022 г.</p>
                 <p id="source_12">[12] <span class="author">BigBlueButton</span>, <span class="paperName">BigBlueButton architecture image voice conference join</span><br><a href="https://docs.bigbluebutton.org/images/10/joining-voice-conf.png" target="_blank">https://docs.bigbluebutton.org/images/10/joining-voice-conf.png</a>, последно посетен на 14 април 2022 г.</p>
-                <p id="source_13"><a href="#source_13">[13]</a> <span class="author">Wikipedia</span>, <span class="paperName">Skype logo</span><br><a href="https://bg.m.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Skype_logo.svg" target="_blank">https://en.wikipedia.org/wiki/Skype</a>, последно посетен на 15 април 2022 г.</p>
+                <p id="source_13">[13] <span class="author">Wikipedia</span>, <span class="paperName">Skype logo</span><br><a href="https://bg.m.wikipedia.org/wiki/%D0%A4%D0%B0%D0%B9%D0%BB:Skype_logo.svg" target="_blank">https://en.wikipedia.org/wiki/Skype</a>, последно посетен на 15 април 2022 г.</p>
+                <p id="source_14">[14] <span class="author">James Jordan on Quora</span>, <span class="paperName">Is there a way to use webrtc with Php?</span><br><a href="https://www.quora.com/Is-there-a-way-to-use-webrtc-with-Php" target="_blank">https://en.wikipedia.org/wiki/Skype</a>, последно посетен на 10 май 2022 г.</p>
         </section>
     </main>
     <footer>
-        2022
+        Ивайло Белчев, 2022
     </footer>
 </form>
 </body>
