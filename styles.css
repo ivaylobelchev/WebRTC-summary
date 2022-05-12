@@ -190,3 +190,24 @@ footer {
   padding-top: 60px; 
   margin-top: -60px;
 }
+
+@font-face {
+  font-family: "Calibri";
+  src: url('../fonts/calibri.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Calibri Bold";
+  src: url('../fonts/calibrib.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Calibri Italic";
+  src: url('../fonts/calibrii.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
